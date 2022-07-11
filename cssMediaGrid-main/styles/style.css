@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1b143f;
+}
+
+header{
+    height: 100px;
+    background-color: #271d4c;
+    color: white;
+    text-align: center;
+    text-shadow: 1em 1em#333;
+    color: white; 
+    
+}
+@media only screen and (max-width:320px) {
+    span.e{
+       visibility: hidden;
+    }  
+    span.s{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width:800px) {
+    span.e{
+        visibility: hidden;
+    }
+}
+#fusee{
+    display: flex;
+    margin: auto;
+}
+#fusee:hover{
+    transform:rotate(360deg);
+    transition-duration:0.5s;
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);  
+    grid-auto-rows: minmax(50px, center);
+    width: 300px;
+    margin: auto;
+}
+.alienB1{
+    grid-column: 1/5;
+    grid-row: 1;
+}
+.alienB2{
+    grid-column: 3/5;
+    grid-row: 1; 
+}
+.alienB3{
+    grid-column: 5/5;
+    grid-row: 1;
+}
+.alienV{
+    grid-column: 2/5;
+    grid-row: 2;
+}
+.alienV2{
+    grid-column: 4/5;
+    grid-row: 2;
+}
+.alienR{
+    grid-column: 3/5;
+    grid-row: 3;
+}
+p{
+    background-color: #271d4c;
+    width: 200px;
+    height:100px ;
+    color: white;
+    border-style: solid;
+    display: flex;
+    margin: auto;
+}
+@media screen and (max-width:320px) {
+    .alienB1{
+        visibility: hidden;
+    }
+    .alienB2{
+        visibility: hidden;
+    }
+    .alienB3{
+        visibility: hidden;
+    }
+    .alienV{
+        visibility: hidden;
+    }
+    .alienV2{
+        visibility: hidden;
+    }
+}
+footer{
+    height: 250px;
+    background-color: #271d4c;
+}
+@media (max-width: 800px) {
+    #logo {
+        width: 80px;
+    }
+}
+@media (max-width:320px) {
+    #logo {
+        width: 50px;
+    }  
+}
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+#linkedin{
+    transform: translate(450px,-70px);
+}
+#Click{
+    color: white;
+    position: absolute;
+    top: 550px;
+    right: 50px;
+}
+/* Ecris en dessous */
